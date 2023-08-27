@@ -189,9 +189,6 @@ body {
         height: 150px; /* Consistent height for mobile screens */
     }
 }
-header.main-header {
-    height: auto;
-}
 
 /* Remove previous adjustment for non-main pages */
 header.page-header {
