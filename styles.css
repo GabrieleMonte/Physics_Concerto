@@ -158,8 +158,8 @@ body {
         background-image: url('images/Physics_concerto1v2_white.png');
         background-repeat: no-repeat;
         background-position: center bottom;
-        background-size: auto 80px;
-        padding-bottom: 90px;
+        background-size: auto 50px;
+        padding-bottom: 50px;
     }
 }
 
@@ -176,7 +176,7 @@ body {
 /* Computer Version Updates for non-main pages */
 @media (min-width: 601px) {
     header.page-header h1 {
-        font-size: 2.5rem;
+        font-size: 4.5rem;
         margin: 0 auto;
     }
 
@@ -188,8 +188,8 @@ body {
 /* Mobile Version Updates for non-main pages */
 @media (max-width: 600px) {
     header.page-header h1 {
-        font-size: 1.2rem;
-        margin: 0 auto;
+        font-size: 2.5rem;
+        margin: 2 auto;
     }
 
     header.page-header {
