@@ -37,11 +37,13 @@ header.page-header {
     color: #fff; /* White text */
     display: flex; /* Flexbox to align items */
     justify-content: space-between; /* Space between title and logo */
+    justify-content: center;
     align-items: center; /* Align items vertically */
     padding: 0 20px; /* Padding on the sides */
 }
 
 header.page-header h1 {
+    margin-right: 100px;
     font-size: 5rem; /* Bigger font size for the title */
 }
 
