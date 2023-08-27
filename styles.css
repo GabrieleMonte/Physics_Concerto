@@ -173,7 +173,7 @@ body {
 /* Mobile Version Updates for non-main pages */
 @media (max-width: 600px) {
     header.page-header h1 {
-        font-size: 1.8 rem; /* Make the header title much smaller */
+        font-size: 1.4 rem; /* Make the header title much smaller */
         margin: 2 auto; /* Center the header title */
     }
 
@@ -196,4 +196,8 @@ header.main-header {
 /* Remove previous adjustment for non-main pages */
 header.page-header {
     height: auto;
+}
+h2 {
+    margin-top: 40px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
 }
