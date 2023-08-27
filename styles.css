@@ -161,7 +161,7 @@ body {
 /* Computer Version Updates for non-main pages */
 @media (min-width: 601px) {
     header.page-header h1 {
-        font-size: 4rem; /* Make the header title smaller */
+        font-size: 3.5rem; /* Make the header title smaller */
         margin: 0 auto; /* Center the header title */
     }
 
