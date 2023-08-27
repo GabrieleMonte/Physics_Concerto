@@ -31,15 +31,25 @@ header.main-header {
     background: url('images/Physics_concerto1.png') no-repeat center center;
     background-size: cover;
 }
-
-/* Other pages' headers with text and logo */
+/* Header styles for non-main pages */
 header.page-header {
-    background: url('images/Physics_concerto2_white.png') no-repeat right center;
-    background-size: 300px;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    display: flex; /* Flexbox to align items */
+    justify-content: space-between; /* Space between title and logo */
+    align-items: center; /* Align items vertically */
+    padding: 0 20px; /* Padding on the sides */
 }
+
+header.page-header h1 {
+    font-size: 2rem; /* Bigger font size for the title */
+}
+
 header.page-header.dark {
-    background: url('images/Physics_concerto2_black.png') no-repeat right center;
-    background-size: 300px;
+    background-image: url('images/Physics_concerto2_white.png'); /* White logo */
+    background-repeat: no-repeat;
+    background-position: right center; /* Logo on the right */
+    background-size: 150px; /* Logo size */
 }
 
 nav {
