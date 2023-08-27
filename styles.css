@@ -43,7 +43,7 @@ header.page-header {
 }
 
 header.page-header h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
 }
 
 nav {
@@ -161,7 +161,7 @@ body {
 /* Computer Version Updates for non-main pages */
 @media (min-width: 601px) {
     header.page-header h1 {
-        font-size: 4.5rem; /* Make the header title smaller */
+        font-size: 4rem; /* Make the header title smaller */
         margin: 0 auto; /* Center the header title */
     }
 
@@ -173,7 +173,7 @@ body {
 /* Mobile Version Updates for non-main pages */
 @media (max-width: 600px) {
     header.page-header h1 {
-        font-size: 2.5 rem; /* Make the header title much smaller */
+        font-size: 1.8 rem; /* Make the header title much smaller */
         margin: 2 auto; /* Center the header title */
     }
 
@@ -181,4 +181,19 @@ body {
         background-color: #333; /* Dark background for the header */
         justify-content: center; /* Center the title */
     }
+}
+
+/* Adjust header height for smaller screens */
+@media (max-width: 600px) {
+    header {
+        height: 150px; /* Consistent height for mobile screens */
+    }
+}
+header.main-header {
+    height: auto;
+}
+
+/* Remove previous adjustment for non-main pages */
+header.page-header {
+    height: auto;
 }
