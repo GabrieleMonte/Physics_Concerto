@@ -113,11 +113,14 @@ body {
         border-top: none;
     }
 }
+header {
+    height: 500px;  /* Desktop default */
+}
 
 /* Adjust header height for smaller screens */
 @media (max-width: 600px) {
     header {
-        height: 150px; /* Consistent height for mobile screens */
+        height: 300px; /* Consistent height for mobile screens */
     }
 }
 
@@ -133,7 +136,7 @@ body {
 @media (max-width: 600px) {
     header.page-header {
         background: none;
-        height: 150px;
+        height: 300px;
     }
 }
 
@@ -186,12 +189,15 @@ body {
 /* Adjust header height for smaller screens */
 @media (max-width: 600px) {
     header {
-        height: 150px; /* Consistent height for mobile screens */
+        height: 300px; /* Consistent height for mobile screens */
     }
 }
 
 /* Remove previous adjustment for non-main pages */
 header.page-header {
+    height: auto;
+}
+header.main-header {
     height: auto;
 }
 h2 {
