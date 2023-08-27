@@ -80,3 +80,6 @@ footer {
     border-top: 2px solid #555;
     border-radius: 0 0 5px 5px;
 }
+.emphasized-text {
+    margin: 20px 0;  /* Adjusts space above and below the paragraph */
+}
