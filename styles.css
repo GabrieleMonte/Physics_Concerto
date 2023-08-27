@@ -197,9 +197,6 @@ header {
 header.page-header {
     height: auto;
 }
-header.main-header {
-    height: auto;
-}
 h2 {
     margin-top: 40px; /* Adjust as needed */
     margin-bottom: 20px; /* Adjust as needed */
