@@ -42,14 +42,14 @@ header.page-header {
 }
 
 header.page-header h1 {
-    font-size: 2rem; /* Bigger font size for the title */
+    font-size: 10rem; /* Bigger font size for the title */
 }
 
 header.page-header.dark {
     background-image: url('images/Physics_concerto2_white.png'); /* White logo */
     background-repeat: no-repeat;
     background-position: right center; /* Logo on the right */
-    background-size: 150px; /* Logo size */
+    background-size: 300px; /* Logo size */
 }
 
 nav {
