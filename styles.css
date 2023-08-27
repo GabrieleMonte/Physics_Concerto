@@ -113,9 +113,6 @@ body {
         border-top: none;
     }
 }
-header {
-    height: 500px;  /* Desktop default */
-}
 
 /* Adjust header height for smaller screens */
 @media (max-width: 550px) {
