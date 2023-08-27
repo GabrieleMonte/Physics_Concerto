@@ -1,29 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physics Concerto</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Using the class 'main-header' for the header of the main page -->
-    <header class="main-header">
-        <h1>Welcome to Physics Concerto</h1>
-        <p>Connecting the dots across the diverse spectrum of physics.</p>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="logistics">Logistics</a>
-        <a href="calendar">Calendar</a>
-        <a href="contact">Contact Us</a>
-    </nav>
-    <main>
-        <!-- Your main content here -->
-    </main>
-    <footer>
-        <p>© 2023 Physics Concerto. All rights reserved.</p>
-        <p>Supported by the Weinberg Institute for Theoretical Physics, Department of Physics, University of Texas.</p>
-    </footer>
-</body>
-</html>
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    border-bottom: 2px solid #555;
+}
+
+/* Main page header with big logo */
+header.main-header {
+    background: url('images/Physics_concerto1.png') no-repeat center center;
+    background-size: cover;
+}
+
+/* Header styles for non-main pages */
+header.page-header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header.page-header h1 {
+    font-size: 10rem;
+}
+
+header.page-header.dark {
+    background-image: url('images/Physics_concerto2_white.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 300px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10px 0;
+    background-color: #444;
+    color: #fff;
+    border-top: 2px solid #555;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Emphasized text in the main page */
+.emphasized-text {
+    margin: 20px 0;
+}
+
+/* Ensure elements don't exceed 100% of the viewport width */
+img, video, iframe, embed {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive typography */
+body {
+    font-size: 16px;
+}
+
+/* Set navigation links to stack vertically on smaller screens */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
+
+    nav a:first-child {
+        border-top: none;
+    }
+}
+
+/* Adjust header height for smaller screens */
+@media (max-width: 600px) {
+    header {
+        height: 200px;
+    }
+}
+
+/* Adjust main content padding for smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}
+
+/* Mobile styles for the main page header */
+@media (max-width: 600px) {
+    header.main-header {
+        background: url('images/Physics_concerto2.png') no-repeat center center;
+        background-size: cover;
+    }
+}
+
+/* Mobile styles for non-main pages headers */
+@media (max-width: 600px) {
+    header.page-header {
+        background: none;
+        height: auto;
+    }
+}
+
+/* Desktop styles for non-main pages headers */
+@media (min-width: 601px) {
+    header.page-header {
+        background-image: url('images/Physics_concerto1v2_white.png');
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: auto 80px;
+        padding-bottom: 90px;
+    }
+}
+
+/* Desktop styles for the main page header */
+@media (min-width: 601px) {
+    header.main-header {
+        background-image: url('images/Physics_concerto1.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
