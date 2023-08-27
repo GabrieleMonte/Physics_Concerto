@@ -43,14 +43,7 @@ header.page-header {
 }
 
 header.page-header h1 {
-    font-size: 2.5rem;
-}
-
-header.page-header.dark {
-    background-image: url('images/Physics_concerto2_white.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 300px;
+    font-size: 4.5rem;
 }
 
 nav {
@@ -140,7 +133,7 @@ body {
 @media (max-width: 600px) {
     header.page-header {
         background: none;
-        height: auto;
+        height: 150px;
     }
 }
 
@@ -150,8 +143,8 @@ body {
         background-image: url('images/Physics_concerto1v2_white.png');
         background-repeat: no-repeat;
         background-position: center bottom;
-        background-size: auto 80px;
-        padding-bottom: 90px;
+        background-size: auto 60px;
+        padding-bottom: 60px;
     }
 }
 
@@ -168,7 +161,7 @@ body {
 /* Computer Version Updates for non-main pages */
 @media (min-width: 601px) {
     header.page-header h1 {
-        font-size: 2.5rem; /* Make the header title smaller */
+        font-size: 4.5rem; /* Make the header title smaller */
         margin: 0 auto; /* Center the header title */
     }
 
@@ -180,8 +173,8 @@ body {
 /* Mobile Version Updates for non-main pages */
 @media (max-width: 600px) {
     header.page-header h1 {
-        font-size: 1.2rem; /* Make the header title much smaller */
-        margin: 0 auto; /* Center the header title */
+        font-size: 2.5 rem; /* Make the header title much smaller */
+        margin: 2 auto; /* Center the header title */
     }
 
     header.page-header {
