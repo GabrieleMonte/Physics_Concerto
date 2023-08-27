@@ -24,6 +24,7 @@ header {
     background-color: #333;
     color: #fff;
     border-bottom: 2px solid #555;
+    box-sizing: border-box;
 }
 
 /* Main page header with big logo */
@@ -39,14 +40,14 @@ header.page-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0px;
     height: 250px;
+    box-sizing: border-box;
 }
 
 header.page-header h1 {
     font-size: 3.2rem;
 }
-
 nav {
     display: flex;
     justify-content: center;
@@ -114,7 +115,25 @@ body {
         border-top: none;
     }
 }
+@media (max-width: 600px) {
+    nav {
+        display: block;  /* Change to block display for better stacking */
+        text-align: center;  /* Center align the navigation links */
+    }
+    
+    nav a {
+        display: block;  /* Display links as block elements */
+        width: 100%;  /* Make them fit the width of the page */
+        padding: 10px 0;  /* Adjust padding */
+        margin: 0;  /* Remove side margins */
+        border-top: 1px solid #ddd;  /* Adjust border for clear separation */
+        border-radius: 0;  /* Remove rounded corners for a simpler look */
+    }
 
+    nav a:first-child {
+        border-top: none;  /* No border for the first link */
+    }
+}
 /* Adjust header height for smaller screens */
 @media (max-width: 550px) {
     header {
