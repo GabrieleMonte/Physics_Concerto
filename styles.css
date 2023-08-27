@@ -60,3 +60,30 @@ footer {
     border-top: 2px solid #555;
     border-radius: 0 0 5px 5px;
 }
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;  /* Adjust based on the desired height */
+    position: relative;
+}
+
+header h1, header p {
+    z-index: 2;
+    background-color: rgba(51, 51, 51, 0.6);  /* Semi-transparent black */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('images/Physics_concerto1_white.png') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
