@@ -18,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 250px;
     position: relative;
     text-align: center;
     background-color: #333;
@@ -34,23 +34,23 @@ header.main-header {
 
 /* Header styles for non-main pages */
 header.page-header {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
-    display: flex; /* Flexbox to align items */
-    justify-content: space-between; /* Space between title and logo */
-    align-items: center; /* Align items vertically */
-    padding: 0 20px; /* Padding on the sides */
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
 header.page-header h1 {
-    font-size: 10rem; /* Bigger font size for the title */
+    font-size: 2.5rem;
 }
 
 header.page-header.dark {
-    background-image: url('images/Physics_concerto2_white.png'); /* White logo */
+    background-image: url('images/Physics_concerto2_white.png');
     background-repeat: no-repeat;
-    background-position: right center; /* Logo on the right */
-    background-size: 300px; /* Logo size */
+    background-position: right center;
+    background-size: 300px;
 }
 
 nav {
@@ -107,7 +107,6 @@ img, video, iframe, embed {
 body {
     font-size: 16px;
 }
-
 /* Set navigation links to stack vertically on smaller screens */
 @media (max-width: 600px) {
     nav a {
@@ -125,14 +124,7 @@ body {
 /* Adjust header height for smaller screens */
 @media (max-width: 600px) {
     header {
-        height: 200px;
-    }
-}
-
-/* Adjust main content padding for smaller screens */
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
+        height: 150px; /* Consistent height for mobile screens */
     }
 }
 
@@ -158,8 +150,8 @@ body {
         background-image: url('images/Physics_concerto1v2_white.png');
         background-repeat: no-repeat;
         background-position: center bottom;
-        background-size: auto 50px;
-        padding-bottom: 50px;
+        background-size: auto 80px;
+        padding-bottom: 90px;
     }
 }
 
@@ -176,35 +168,24 @@ body {
 /* Computer Version Updates for non-main pages */
 @media (min-width: 601px) {
     header.page-header h1 {
-        font-size: 4.5rem;
-        margin: 0 auto;
+        font-size: 2.5rem; /* Make the header title smaller */
+        margin: 0 auto; /* Center the header title */
     }
 
     header.page-header {
-        justify-content: center;
+        justify-content: center; /* Center the title and image */
     }
 }
 
 /* Mobile Version Updates for non-main pages */
 @media (max-width: 600px) {
     header.page-header h1 {
-        font-size: 2.5rem;
-        margin: 2 auto;
+        font-size: 1.2rem; /* Make the header title much smaller */
+        margin: 0 auto; /* Center the header title */
     }
 
     header.page-header {
-        background-color: #333;
-        justify-content: center;
-    }
-}
-/* Consistent header size for both main and non-main pages */
-header {
-    height: 250px;  /* Consistent height for desktop */
-}
-
-/* Adjust header height for smaller screens */
-@media (max-width: 600px) {
-    header {
-        height: 150px; /* Consistent height for mobile screens */
+        background-color: #333; /* Dark background for the header */
+        justify-content: center; /* Center the title */
     }
 }
