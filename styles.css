@@ -35,11 +35,11 @@ header.main-header {
 /* Other pages' headers with text and logo */
 header.page-header {
     background: url('images/Physics_concerto2_white.png') no-repeat right center;
-    background-size: 150px;
+    background-size: 300px;
 }
 header.page-header.dark {
     background: url('images/Physics_concerto2_black.png') no-repeat right center;
-    background-size: 150px;
+    background-size: 300px;
 }
 
 nav {
