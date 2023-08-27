@@ -176,7 +176,7 @@ header {
 /* Mobile Version Updates for non-main pages */
 @media (max-width: 550px) {
     header.page-header h1 {
-        font-size: 1.2 rem; /* Make the header title much smaller */
+        font-size: 1. rem; /* Make the header title much smaller */
         margin: 2 auto; /* Center the header title */
     }
 
