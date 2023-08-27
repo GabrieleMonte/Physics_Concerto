@@ -90,6 +90,44 @@ footer {
     border-top: 2px solid #555;
     border-radius: 0 0 5px 5px;
 }
+/* Ensure elements don't exceed 100% of the viewport width */
+img, video, iframe, embed {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive typography */
+body {
+    font-size: 16px;
+}
+
+/* Set navigation links to stack vertically on smaller screens */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }
+
+    nav a:first-child {
+        border-top: none;
+    }
+}
+
+/* Adjust header height for smaller screens */
+@media (max-width: 600px) {
+    header {
+        height: 200px;
+    }
+}
+
+/* Adjust main content padding for smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+}
 
 /* Emphasized text in the main page */
 .emphasized-text {
