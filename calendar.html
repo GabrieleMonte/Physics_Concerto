@@ -18,7 +18,7 @@
     </nav>
     <main>
         <section>
-        <h2 onclick="toggleContent('spring2024')">Spring 2024 Seminars</h2>
+        <h2 onclick="toggleContent('spring2024')">Spring 2024 Seminars <span class="arrow">&#x25BA;</span> </h2>
             <div id="spring2024" style="display:none;">
             <p><strong>Date:</strong> January 31, 2024</p>
             <p><strong>Speaker:</strong> Andrew Murphy</p>
@@ -83,7 +83,7 @@
         </div>
         </section>
         <section>
-            <h2 onclick="toggleContent('fall2023')">Fall 2023 Seminars</h2>
+            <h2 onclick="toggleContent('fall2023')">Fall 2023 Seminars <span class="arrow">&#x25BA;</span> </h2>
             <div id="fall2023" style="display:none;">
             <p><strong>Date:</strong> September 14, 2023</p>
             <p><strong>Speaker:</strong> Katie Rink</p>
@@ -138,13 +138,16 @@
 </footer>
 <script>
     function toggleContent(id) {
-        var content = document.getElementById(id);
-        if (content.style.display === "none") {
-            content.style.display = "block";
-        } else {
-            content.style.display = "none";
-        }
+    var element = document.getElementById(id);
+    var arrow = element.previousElementSibling.querySelector('.arrow'); // Find the arrow span
+    if (element.style.display === 'block') {
+        element.style.display = 'none';
+        arrow.innerHTML = '&#x25BA;'; // Arrow points right when list is hidden
+    } else {
+        element.style.display = 'block';
+        arrow.innerHTML = '&#x25BC;'; // Arrow points down when list is visible
     }
+}
 </script>
 </body>
 </html>
